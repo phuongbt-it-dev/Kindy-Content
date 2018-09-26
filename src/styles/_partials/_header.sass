@@ -1,10 +1,51 @@
 header
-	.navbar
-		+pad(null 0)
-	.navbar-brand
-		img 
-			max-height: 2rem
+	.container
+		.navbar
+			+pad(null 0)
+			.navbar-brand
+				img
+					transition: .5s all ease-in-out
+					max-width: 5rem
+			#fullStackMenu
+				.navbar-nav
+					.nav-item
+						border-top: 1px solid red
+						.nav-link
+							+fz(1rem)
+							color: #000000
 	+media-breakpoint-up(md)
-		.navbar-brand
-			img 
-				max-height: 3rem
+		.container
+			.navbar
+				.navbar-brand
+					img
+						transition: .5s all ease-in-out
+						max-width: 6rem
+	+media-breakpoint-up(lg)
+		.container
+			+pad(null 100px)
+			.navbar
+				#fullStackMenu
+					.navbar-nav
+						+mar(0)
+						.nav-item
+							border: none
+							#dropdownFS
+								margin-left: 4rem
+								img
+									width: 2rem
+									height: 2rem
+									border-radius: 50%
+							.dropdown-menu
+								max-width: 800px
+								max-height: 500px
+								.dropdown-item
+									span
+										margin-left: .5rem
+							.nav-link
+								+pad(null 1rem)
+								&:hover
+									color: $sun-flower
+									background: gray
+									border-top-left-radius: 10px
+									border-bottom-right-radius: 10px
+									transition: .5s all ease-in-out

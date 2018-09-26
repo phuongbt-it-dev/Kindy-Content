@@ -6322,16 +6322,51 @@ html, body {
   .container {
     width: auto; } }
 
-header .navbar {
+header .container .navbar {
   padding-right: 0;
   padding-left: 0; }
-
-header .navbar-brand img {
-  max-height: 2rem; }
+  header .container .navbar .navbar-brand img {
+    transition: .5s all ease-in-out;
+    max-width: 5rem; }
+  header .container .navbar #fullStackMenu .navbar-nav .nav-item {
+    border-top: 1px solid red; }
+    header .container .navbar #fullStackMenu .navbar-nav .nav-item .nav-link {
+      font-size: 1rem;
+      color: #000000; }
 
 @media (min-width: 768px) {
-  header .navbar-brand img {
-    max-height: 3rem; } }
+  header .container .navbar .navbar-brand img {
+    transition: .5s all ease-in-out;
+    max-width: 6rem; } }
+
+@media (min-width: 992px) {
+  header .container {
+    padding-right: 100px;
+    padding-left: 100px; }
+    header .container .navbar #fullStackMenu .navbar-nav {
+      margin: 0; }
+      header .container .navbar #fullStackMenu .navbar-nav .nav-item {
+        border: none; }
+        header .container .navbar #fullStackMenu .navbar-nav .nav-item #dropdownFS {
+          margin-left: 4rem; }
+          header .container .navbar #fullStackMenu .navbar-nav .nav-item #dropdownFS img {
+            width: 2rem;
+            height: 2rem;
+            border-radius: 50%; }
+        header .container .navbar #fullStackMenu .navbar-nav .nav-item .dropdown-menu {
+          max-width: 800px;
+          max-height: 500px; }
+          header .container .navbar #fullStackMenu .navbar-nav .nav-item .dropdown-menu .dropdown-item span {
+            margin-left: .5rem; }
+        header .container .navbar #fullStackMenu .navbar-nav .nav-item .nav-link {
+          padding-right: 1rem;
+          padding-left: 1rem; }
+          header .container .navbar #fullStackMenu .navbar-nav .nav-item .nav-link:hover {
+            color: #f1c40f;
+            background: gray;
+            border-top-left-radius: 10px;
+            border-bottom-right-radius: 10px;
+            transition: .5s all ease-in-out; } }
 
 footer img {
   max-width: 200px; }
