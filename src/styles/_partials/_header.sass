@@ -13,6 +13,20 @@ header
 						.nav-link
 							+fz(1rem)
 							color: #000000
+				.custom-search
+					.lang
+						+pad(0)
+						+mar(0)
+						border-top: 1px solid red
+						#dropdownFS
+							+pad(.5rem 0)
+					.search
+						+pad(0)
+						+mar(0)
+						border-top: 1px solid red
+						+fz(1.5rem)
+						// #dropdownFS
+						// 	+pad(.5rem 0)
 	+media-breakpoint-up(md)
 		.container
 			.navbar
@@ -20,6 +34,22 @@ header
 					img
 						transition: .5s all ease-in-out
 						max-width: 6rem
+				#fullStackMenu
+					.custom-search
+						.lang
+							+pad(0)
+							+mar(0)
+							border-top: 1px solid red
+							#dropdownFS
+								+pad(.5rem 0)
+						.search
+							+pad(0)
+							+mar(0)
+							border-top: 1px solid red
+							+fz(1.5rem)
+							// #dropdownFS
+							// 	+pad(.5rem 0)
+
 	+media-breakpoint-up(lg)
 		.container
 			+pad(null 100px)
@@ -29,11 +59,27 @@ header
 						+mar(0)
 						.nav-item
 							border: none
+							.nav-link
+								+pad(null 1rem)
+								&:hover
+									color: $sun-flower
+									background: #424242
+									border-top-left-radius: 10px
+									border-bottom-right-radius: 10px
+									transition: .5s all ease-in-out
+					.custom-search
+						display: inline-flex
+						.lang
+							+pad(0)
+							+mar(0)
 							#dropdownFS
 								margin-left: 4rem
+								.nav-link
+									&:hover
+										background: #8080802e
 								img
-									width: 2rem
-									height: 2rem
+									width: 1.3rem
+									height: 1.3rem
 									border-radius: 50%
 							.dropdown-menu
 								max-width: 800px
@@ -41,11 +87,19 @@ header
 								.dropdown-item
 									span
 										margin-left: .5rem
-							.nav-link
-								+pad(null 1rem)
-								&:hover
-									color: $sun-flower
-									background: gray
-									border-top-left-radius: 10px
-									border-bottom-right-radius: 10px
-									transition: .5s all ease-in-out
+						.search
+							+pad(0)
+							+mar(0)
+							display: flex
+							justify-content: center
+							align-items: center
+							.search-item
+								.icon-search
+									i
+										+fz(1.5rem)
+						
+
+
+
+	
+

@@ -2,7 +2,7 @@
 header.bg-light
 	.container
 		nav.navbar.navbar-expand-lg.navbar-light
-			a.navbar-brand(href="#") 
+			a.navbar-brand(href="javascript:void(0)") 
 				img(src="./img/logo.png", alt="Logo")
 			//- Đây là nút sẽ hiển thị trong mobile
 			button.navbar-toggler(type="button" data-toggle="collapse" data-target="#fullStackMenu" aria-controls="fullStackMenu" aria-expanded="false" aria-label="Toggle navigation")
@@ -20,11 +20,13 @@ header.bg-light
 						a.nav-link(href="news.html") Tin tức
 					li.nav-item
 						a.nav-link(href="contact.html") Liên hệ
-					li.nav-item
+				.custom-search
+					ul.lang
+						li.nav-item.list-unstyled
 						a#dropdownFS.nav-link.dropdown-toggle(href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false") 
 							img(src="./img/News-language.png", alt="")
 						.dropdown-menu(aria-labelledby="dropdownFS")
-							a.dropdown-item(href="#")  
+							a.dropdown-item(href="javascript:void(0)")  
 								img(src="./img/News-language.png", alt="")
 								span English
 							a.dropdown-item(href="#")  
@@ -36,83 +38,19 @@ header.bg-light
 							a.dropdown-item(href="#")  
 								img(src="./img/News-language.png", alt="")
 								span English
-							a.dropdown-item(href="#")  
-								img(src="./img/News-language.png", alt="")
-								span English
-							a.dropdown-item(href="#")  
-								img(src="./img/News-language.png", alt="")
-								span English
-							a.dropdown-item(href="#")  
-								img(src="./img/News-language.png", alt="")
-								span English
-							a.dropdown-item(href="#")  
-								img(src="./img/News-language.png", alt="")
-								span English
-							a.dropdown-item(href="#")  
-								img(src="./img/News-language.png", alt="")
-								span English
-							a.dropdown-item(href="#")  
-								img(src="./img/News-language.png", alt="")
-								span English
-							a.dropdown-item(href="#")  
-								img(src="./img/News-language.png", alt="")
-								span English
-							a.dropdown-item(href="#")  
-								img(src="./img/News-language.png", alt="")
-								span English
-							a.dropdown-item(href="#")  
-								img(src="./img/News-language.png", alt="")
-								span English
-							a.dropdown-item(href="#")  
-								img(src="./img/News-language.png", alt="")
-								span English
-							a.dropdown-item(href="#")  
-								img(src="./img/News-language.png", alt="")
-								span English
-							a.dropdown-item(href="#")  
-								img(src="./img/News-language.png", alt="")
-								span English
-							a.dropdown-item(href="#")  
-								img(src="./img/News-language.png", alt="")
-								span English
-							a.dropdown-item(href="#")  
-								img(src="./img/News-language.png", alt="")
-								span English
-							a.dropdown-item(href="#")  
-								img(src="./img/News-language.png", alt="")
-								span English
-							a.dropdown-item(href="#")  
-								img(src="./img/News-language.png", alt="")
-								span English
-							a.dropdown-item(href="#")  
-								img(src="./img/News-language.png", alt="")
-								span English
-							a.dropdown-item(href="#")  
-								img(src="./img/News-language.png", alt="")
-								span English
-							a.dropdown-item(href="#")  
-								img(src="./img/News-language.png", alt="")
-								span English
-							a.dropdown-item(href="#")  
-								img(src="./img/News-language.png", alt="")
-								span English
-							a.dropdown-item(href="#")  
-								img(src="./img/News-language.png", alt="")
-								span English
-							a.dropdown-item(href="#")  
-								img(src="./img/News-language.png", alt="")
-								span English
-							a.dropdown-item(href="#")  
-								img(src="./img/News-language.png", alt="")
-								span English
-							a.dropdown-item(href="#")  
-								img(src="./img/News-language.png", alt="")
-								span English
-							a.dropdown-item(href="#")  
-								img(src="./img/News-language.png", alt="")
-								span English
-							a.dropdown-item(href="#")  
-								img(src="./img/News-language.png", alt="")
-								span English
+					ul.search
+						li.search-item.list-unstyled
+							a.icon-search(href="javascript:void(0)")
+								i.fa.fa-search
+							.search-box
+								form.fr-sear(action="#" name="form-search")
+									input.txt-sear(type="text" name="text-search")
+									input.sb-sear(type="submit" name="submit-search" value="Search")
+
+				
+
+								
+						
+							
 					
 <!-- ////////////// HEADER ////////////// -->
