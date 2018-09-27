@@ -9,7 +9,7 @@ header
 			#fullStackMenu
 				.navbar-nav
 					.nav-item
-						border-top: 1px solid red
+						border-top: 1px solid #FF6B07
 						.nav-link
 							+fz(1rem)
 							color: #000000
@@ -17,13 +17,13 @@ header
 					.lang
 						+pad(0)
 						+mar(0)
-						border-top: 1px solid red
+						border-top: 1px solid #FF6B07
 						#dropdownFS
 							+pad(.5rem 0)
 					.search
 						+pad(0)
 						+mar(0)
-						border-top: 1px solid red
+						border-top: 1px solid #FF6B07
 						+fz(1.5rem)
 						// #dropdownFS
 						// 	+pad(.5rem 0)
@@ -39,13 +39,13 @@ header
 						.lang
 							+pad(0)
 							+mar(0)
-							border-top: 1px solid red
+							border-top: 1px solid #FF6B07
 							#dropdownFS
 								+pad(.5rem 0)
 						.search
 							+pad(0)
 							+mar(0)
-							border-top: 1px solid red
+							border-top: 1px solid #FF6B07
 							+fz(1.5rem)
 							// #dropdownFS
 							// 	+pad(.5rem 0)
@@ -70,6 +70,7 @@ header
 					.custom-search
 						display: inline-flex
 						.lang
+							border: none
 							+pad(0)
 							+mar(0)
 							#dropdownFS
@@ -88,8 +89,9 @@ header
 									span
 										margin-left: .5rem
 						.search
+							border: none
+							+mar(0 0 0 .5rem)
 							+pad(0)
-							+mar(0)
 							display: flex
 							justify-content: center
 							align-items: center

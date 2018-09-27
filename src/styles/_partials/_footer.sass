@@ -1,3 +1,43 @@
 footer
-	img 
-		max-width: 200px
+	.link-footer
+		min-height: 200px
+		background-image: url('../img/Footer_bg.png')
+		background-size: cover
+		background-position: center center
+		+pad(2rem 0)
+		.container
+			text-align: center
+		h5
+			+mar(0 0 2rem 0)
+			+fz(1.5rem)
+		+media-breakpoint-up(sm)
+			.container
+				text-align: left
+		+media-breakpoint-up(md)
+			.container
+				text-align: left
+		+media-breakpoint-up(lg)
+			.container
+				+pad(null 100px)
+				text-align: left
+	.registra-footer
+		text-align: center
+		min-height: 65px
+		background: #FF6D00
+		+pad(1rem 0)
+		.rgs-txt
+			h6
+				+mar(0)
+				color: $whites
+				+fz(2rem)
+			.txt-lf
+				+fz(1rem)
+				color: $whites
+		.rgs-email
+			input
+				width: 20rem
+		+media-breakpoint-up(lg)
+			.container
+					+pad(null 100px)
+
+

@@ -6329,14 +6329,14 @@ header .container .navbar {
     transition: .5s all ease-in-out;
     max-width: 5rem; }
   header .container .navbar #fullStackMenu .navbar-nav .nav-item {
-    border-top: 1px solid red; }
+    border-top: 1px solid #FF6B07; }
     header .container .navbar #fullStackMenu .navbar-nav .nav-item .nav-link {
       font-size: 1rem;
       color: #000000; }
   header .container .navbar #fullStackMenu .custom-search .lang {
     padding: 0;
     margin: 0;
-    border-top: 1px solid red; }
+    border-top: 1px solid #FF6B07; }
     header .container .navbar #fullStackMenu .custom-search .lang #dropdownFS {
       padding-top: 0.5rem;
       padding-right: 0;
@@ -6345,7 +6345,7 @@ header .container .navbar {
   header .container .navbar #fullStackMenu .custom-search .search {
     padding: 0;
     margin: 0;
-    border-top: 1px solid red;
+    border-top: 1px solid #FF6B07;
     font-size: 1.5rem; }
 
 @media (min-width: 768px) {
@@ -6355,7 +6355,7 @@ header .container .navbar {
   header .container .navbar #fullStackMenu .custom-search .lang {
     padding: 0;
     margin: 0;
-    border-top: 1px solid red; }
+    border-top: 1px solid #FF6B07; }
     header .container .navbar #fullStackMenu .custom-search .lang #dropdownFS {
       padding-top: 0.5rem;
       padding-right: 0;
@@ -6364,7 +6364,7 @@ header .container .navbar {
   header .container .navbar #fullStackMenu .custom-search .search {
     padding: 0;
     margin: 0;
-    border-top: 1px solid red;
+    border-top: 1px solid #FF6B07;
     font-size: 1.5rem; } }
 
 @media (min-width: 992px) {
@@ -6387,6 +6387,7 @@ header .container .navbar {
     header .container .navbar #fullStackMenu .custom-search {
       display: inline-flex; }
       header .container .navbar #fullStackMenu .custom-search .lang {
+        border: none;
         padding: 0;
         margin: 0; }
         header .container .navbar #fullStackMenu .custom-search .lang #dropdownFS {
@@ -6403,16 +6404,68 @@ header .container .navbar {
           header .container .navbar #fullStackMenu .custom-search .lang .dropdown-menu .dropdown-item span {
             margin-left: .5rem; }
       header .container .navbar #fullStackMenu .custom-search .search {
+        border: none;
+        margin-top: 0;
+        margin-right: 0;
+        margin-bottom: 0;
+        margin-left: 0.5rem;
         padding: 0;
-        margin: 0;
         display: flex;
         justify-content: center;
         align-items: center; }
         header .container .navbar #fullStackMenu .custom-search .search .search-item .icon-search i {
           font-size: 1.5rem; } }
 
-footer img {
-  max-width: 200px; }
+footer .link-footer {
+  min-height: 200px;
+  background-image: url("../img/Footer_bg.png");
+  background-size: cover;
+  background-position: center center;
+  padding-top: 2rem;
+  padding-right: 0;
+  padding-bottom: 2rem;
+  padding-left: 0; }
+  footer .link-footer .container {
+    text-align: center; }
+  footer .link-footer h5 {
+    margin-top: 0;
+    margin-right: 0;
+    margin-bottom: 2rem;
+    margin-left: 0;
+    font-size: 1.5rem; }
+  @media (min-width: 576px) {
+    footer .link-footer .container {
+      text-align: left; } }
+  @media (min-width: 768px) {
+    footer .link-footer .container {
+      text-align: left; } }
+  @media (min-width: 992px) {
+    footer .link-footer .container {
+      padding-right: 100px;
+      padding-left: 100px;
+      text-align: left; } }
+
+footer .registra-footer {
+  text-align: center;
+  min-height: 65px;
+  background: #FF6D00;
+  padding-top: 1rem;
+  padding-right: 0;
+  padding-bottom: 1rem;
+  padding-left: 0; }
+  footer .registra-footer .rgs-txt h6 {
+    margin: 0;
+    color: #ffffff;
+    font-size: 2rem; }
+  footer .registra-footer .rgs-txt .txt-lf {
+    font-size: 1rem;
+    color: #ffffff; }
+  footer .registra-footer .rgs-email input {
+    width: 20rem; }
+  @media (min-width: 992px) {
+    footer .registra-footer .container {
+      padding-right: 100px;
+      padding-left: 100px; } }
 
 .home-slider .owl-carousel .item {
   position: relative; }
