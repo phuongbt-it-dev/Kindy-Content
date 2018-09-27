@@ -4,15 +4,16 @@ footer
 		.container
 			.row
 				.col-sm-6.col-md-4
-					img.mb-2(src="./img/logo.png" alt="")
-					//- small.d-block.mb-3.text-muted Copyright 2018 by 
-					//- 	a(href='/') FullStack Vietnam.
+					a(href="#")
+						img.mb-2(src="./img/logo.png" alt="")
+						//- small.d-block.mb-3.text-muted Copyright 2018 by 
+						//- 	a(href='/') FullStack Vietnam.
 					p.text-small.text-muted LL1G Ba Vì, Phường 5, Quận 10, Thành Phố Hồ Chí Minh
 					p.text-small.text-muted
 						|	Hotline: 0981935440
 						br
 						|	Email: contact@dichvucontent.com
-				.col-sm-6.col-md-4
+				.col-sm-6.col-md-4.introduct
 					h5 Giới thiệu
 					ul.list-unstyled.text-small
 						li
@@ -26,7 +27,7 @@ footer
 						li
 							a.text-muted(href="#") Tuyển dụng
 					
-				.col-sm.col-md-4
+				.col-sm.col-md-4.service
 					h5 Dịch vụ Content
 					ul.list-unstyled.text-small
 						li
@@ -44,15 +45,39 @@ footer
 	.registra-footer
 		.container
 			.row
-				.col-sm-12.col-md-4
+				.col-sm-12.col-md-4.txt-intro
 					.rgs-txt
 						h6 Đăng kí nhận bản tin
 						p.txt-lf Kết nối với chúng tôi để nhận thông báo mới
-				.col-sm-12.col-md-4
+				.col-sm-12.col-md-4.email-intro
 					.form.rgs-email
 						input(type="text", name="", placeholder="Điền địa chỉ email của bạn...")
-						a(href="javascript:void(0)") Đăng kí
+						button(type="button") Đăng kí		
+				.col-sm.col-md-4.social-intro
+					ul.icon-social.list-unstyled
+						li.icon-item
+							a.icon-link(href="javascript:avoid(0)")
+								i.fa.fa-facebook
+						li.icon-item
+							a.icon-link(href="javascript:avoid(0)")
+								i.fa.fa-google
+						li.icon-item
+							a.icon-link(href="javascript:avoid(0)")
+								i.fa.fa-twitter
+	.copyright
+		.container.text-center
+			.row
+				.col-12.col-lg-6.inf-link
+					ul.item.list-unstyled
+						li.item-nav
+							a.item-link(href="#") Điều kiện & Điều khoản
+						li.item-nav
+							a.item-link(href="#") Chính sách bảo mật
+						li.item-nav
+							a.item-link(href="#") Sitemap
+				.col-12.col-lg-6.txt-copy.text-center
+					.title
+						p Copyright 2018 Dịch vụ Content. All right reserved. Designed by Cánh Cam.
+					
 						
-				.col-sm.col-md-4
-					p Lorem ipsum dolor sit amet consectetur, adipisicing elit. Corporis, sit nihil, exercitationem ipsa aperiam, perferendis excepturi aliquid unde nesciunt quaerat voluptatibus totam quia cumque porro accusantium aut numquam qui maiores!
 

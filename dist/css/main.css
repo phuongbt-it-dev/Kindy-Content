@@ -6427,45 +6427,255 @@ footer .link-footer {
   padding-left: 0; }
   footer .link-footer .container {
     text-align: center; }
-  footer .link-footer h5 {
-    margin-top: 0;
+  footer .link-footer .introduct h5, footer .link-footer .service h5 {
+    margin-top: 1rem;
     margin-right: 0;
-    margin-bottom: 2rem;
+    margin-bottom: 1.4rem;
     margin-left: 0;
     font-size: 1.5rem; }
+  footer .link-footer .introduct a, footer .link-footer .service a {
+    text-decoration: none; }
   @media (min-width: 576px) {
     footer .link-footer .container {
-      text-align: left; } }
+      text-align: left; }
+      footer .link-footer .container .introduct a, footer .link-footer .container .service a {
+        text-decoration: none; } }
   @media (min-width: 768px) {
     footer .link-footer .container {
-      text-align: left; } }
+      text-align: left; }
+      footer .link-footer .container .introduct a, footer .link-footer .container .service a {
+        text-decoration: none; } }
   @media (min-width: 992px) {
     footer .link-footer .container {
       padding-right: 100px;
       padding-left: 100px;
-      text-align: left; } }
+      text-align: left; }
+      footer .link-footer .container .introduct a:hover, footer .link-footer .container .service a:hover {
+        text-decoration: underline; } }
 
 footer .registra-footer {
-  text-align: center;
   min-height: 65px;
   background: #FF6D00;
   padding-top: 1rem;
   padding-right: 0;
-  padding-bottom: 1rem;
+  padding-bottom: 0;
   padding-left: 0; }
-  footer .registra-footer .rgs-txt h6 {
-    margin: 0;
-    color: #ffffff;
-    font-size: 2rem; }
-  footer .registra-footer .rgs-txt .txt-lf {
-    font-size: 1rem;
-    color: #ffffff; }
-  footer .registra-footer .rgs-email input {
-    width: 20rem; }
+  footer .registra-footer .container {
+    text-align: center; }
+    footer .registra-footer .container .rgs-txt h6 {
+      margin: 0;
+      color: #ffffff;
+      font-size: 2rem; }
+    footer .registra-footer .container .rgs-txt .txt-lf {
+      font-size: 1rem;
+      color: #ffffff; }
+    footer .registra-footer .container .rgs-email {
+      background: #FF6D00;
+      border: 1px solid #ffffff; }
+      footer .registra-footer .container .rgs-email input {
+        width: 75%;
+        height: 35px;
+        margin: 0;
+        padding: 0;
+        border: 0;
+        background: #FF6D00;
+        color: #ffffff; }
+      footer .registra-footer .container .rgs-email button {
+        background: #FF6D00;
+        color: #ffffff;
+        margin: 0;
+        padding: 0;
+        border: 0;
+        position: relative;
+        font-size: 1.2rem; }
+        footer .registra-footer .container .rgs-email button:before {
+          content: "";
+          display: block;
+          width: 1px;
+          height: 100%;
+          position: absolute;
+          top: 0;
+          right: 0;
+          bottom: 0;
+          left: -30%;
+          background: #ffffff; }
+    footer .registra-footer .container .icon-social .icon-item {
+      display: inline-block;
+      margin-top: 1rem;
+      margin-right: 0;
+      margin-bottom: 0;
+      margin-left: 0; }
+      footer .registra-footer .container .icon-social .icon-item .icon-link {
+        text-decoration: none; }
+        footer .registra-footer .container .icon-social .icon-item .icon-link i {
+          width: 3.5rem;
+          height: 3.5rem;
+          border-radius: 50%;
+          border: 1px solid #ffffff;
+          font-size: 2rem;
+          color: #ffffff;
+          display: flex;
+          justify-content: center;
+          align-items: center; }
+  @media (min-width: 576px) {
+    footer .registra-footer .container .rgs-email input {
+      width: 80%; } }
+  @media (min-width: 768px) {
+    footer .registra-footer .container {
+      text-align: left; }
+      footer .registra-footer .container .rgs-txt h6 {
+        font-size: 1.2rem; }
+      footer .registra-footer .container .rgs-txt .txt-lf {
+        font-size: 0.9rem; }
+      footer .registra-footer .container .rgs-email {
+        border: none;
+        text-align: center; }
+        footer .registra-footer .container .rgs-email input {
+          border: 1px solid #ffffff;
+          padding: 0.5rem;
+          width: 100%; }
+        footer .registra-footer .container .rgs-email button {
+          border: 1px solid #ffffff;
+          padding-top: 0.3rem;
+          padding-right: 0.5rem;
+          padding-bottom: 0.3rem;
+          padding-left: 0.5rem;
+          margin-top: 0.5rem;
+          margin-right: 0;
+          margin-bottom: 0.5rem;
+          margin-left: 0; }
+          footer .registra-footer .container .rgs-email button:before {
+            display: none; }
+      footer .registra-footer .container .icon-social {
+        text-align: right; }
+        footer .registra-footer .container .icon-social .icon-item {
+          margin: 0; }
+          footer .registra-footer .container .icon-social .icon-item .icon-link i {
+            width: 3rem;
+            height: 3rem;
+            font-size: 1.5rem; } }
   @media (min-width: 992px) {
     footer .registra-footer .container {
       padding-right: 100px;
-      padding-left: 100px; } }
+      padding-left: 100px; }
+      footer .registra-footer .container .rgs-txt h6 {
+        font-size: 1.5rem; }
+      footer .registra-footer .container .rgs-txt .txt-lf {
+        font-size: 0.7rem;
+        margin: 0; }
+      footer .registra-footer .container .rgs-email {
+        background: #FF6D00;
+        border: 1px solid #ffffff; }
+        footer .registra-footer .container .rgs-email input {
+          width: 72%;
+          height: 35px;
+          margin: 0;
+          padding: 0;
+          border: 0;
+          background: #FF6D00;
+          color: #ffffff;
+          font-size: 0.9rem; }
+        footer .registra-footer .container .rgs-email button {
+          background: #FF6D00;
+          color: #ffffff;
+          margin: 0;
+          padding: 0;
+          border: 0;
+          position: relative;
+          font-size: 1rem; }
+          footer .registra-footer .container .rgs-email button:before {
+            content: "";
+            display: block;
+            width: 1px;
+            height: 100%;
+            position: absolute;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: -17%;
+            background: #ffffff; }
+          footer .registra-footer .container .rgs-email button:hover {
+            color: gray; }
+      footer .registra-footer .container .icon-social {
+        text-align: right; }
+        footer .registra-footer .container .icon-social .icon-item {
+          display: inline-block;
+          margin: 0; }
+          footer .registra-footer .container .icon-social .icon-item .icon-link {
+            text-decoration: none; }
+            footer .registra-footer .container .icon-social .icon-item .icon-link i {
+              width: 3rem;
+              height: 3rem;
+              border-radius: 50%;
+              border: 1px solid #ffffff;
+              font-size: 1.5rem;
+              color: #ffffff;
+              display: flex;
+              justify-content: center;
+              align-items: center; }
+              footer .registra-footer .container .icon-social .icon-item .icon-link i:hover {
+                color: gray; } }
+
+footer .copyright {
+  min-height: 35px;
+  background: #212121; }
+  footer .copyright .inf-link {
+    padding: 0; }
+    footer .copyright .inf-link .item {
+      display: flex;
+      justify-content: center;
+      margin: 0; }
+      footer .copyright .inf-link .item .item-nav {
+        margin-top: 0.5rem;
+        margin-right: 0.8rem;
+        margin-bottom: 0;
+        margin-left: 0; }
+        footer .copyright .inf-link .item .item-nav .item-link {
+          margin-top: 0;
+          margin-right: 0.5rem;
+          margin-bottom: 0;
+          margin-left: 0.5rem;
+          text-decoration: none;
+          color: #5A5A5A;
+          font-size: 1rem; }
+  footer .copyright .txt-copy {
+    display: flex;
+    justify-content: center; }
+    footer .copyright .txt-copy .title p {
+      color: #5A5A5A;
+      margin: 0;
+      font-size: 1rem; }
+  @media (min-width: 992px) {
+    footer .copyright .container {
+      padding-top: 0;
+      padding-right: 100px;
+      padding-bottom: 0;
+      padding-left: 100px; }
+      footer .copyright .container .item {
+        justify-content: flex-start;
+        margin-top: 0.5rem;
+        margin-right: 0;
+        margin-bottom: 0.5rem;
+        margin-left: 0; }
+        footer .copyright .container .item .item-nav {
+          margin: 0; }
+          footer .copyright .container .item .item-nav .item-link {
+            font-size: 0.8rem;
+            margin-top: 0;
+            margin-right: 0.5rem;
+            margin-bottom: 0;
+            margin-left: 0; }
+            footer .copyright .container .item .item-nav .item-link:hover {
+              color: #FF6D00; }
+      footer .copyright .container .txt-copy {
+        margin-top: 0.5rem;
+        margin-right: 0;
+        margin-bottom: 0.5rem;
+        margin-left: 0;
+        padding: 0;
+        align-items: center; }
+        footer .copyright .container .txt-copy .title p {
+          font-size: 0.8rem; } }
 
 .home-slider .owl-carousel .item {
   position: relative; }

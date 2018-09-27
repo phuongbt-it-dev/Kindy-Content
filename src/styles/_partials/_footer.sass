@@ -7,37 +7,234 @@ footer
 		+pad(2rem 0)
 		.container
 			text-align: center
-		h5
-			+mar(0 0 2rem 0)
-			+fz(1.5rem)
+		.introduct,.service
+			h5
+				+mar(1rem 0 1.4rem 0)
+				+fz(1.5rem)
+			a
+				text-decoration: none
 		+media-breakpoint-up(sm)
 			.container
 				text-align: left
+				.introduct,.service
+					a
+						text-decoration: none
 		+media-breakpoint-up(md)
 			.container
 				text-align: left
+				.introduct,.service
+					a
+						text-decoration: none
 		+media-breakpoint-up(lg)
 			.container
 				+pad(null 100px)
 				text-align: left
+				.introduct,.service
+					a
+						&:hover
+							text-decoration: underline
 	.registra-footer
-		text-align: center
 		min-height: 65px
 		background: #FF6D00
-		+pad(1rem 0)
-		.rgs-txt
-			h6
-				+mar(0)
-				color: $whites
-				+fz(2rem)
-			.txt-lf
-				+fz(1rem)
-				color: $whites
-		.rgs-email
-			input
-				width: 20rem
+		+pad(1rem 0 0 0)
+		.container
+			text-align: center
+			.rgs-txt
+				h6
+					+mar(0)
+					color: $whites
+					+fz(2rem)
+				.txt-lf
+					+fz(1rem)
+					color: $whites
+			.rgs-email
+				background: #FF6D00
+				border: 1px solid $whites
+				input
+					width: 75%
+					height: 35px
+					+mar(0)
+					+pad(0)
+					border: 0
+					background: #FF6D00
+					color: $whites
+				button
+					background: #FF6D00
+					color: $whites
+					+mar(0)
+					+pad(0)
+					border: 0
+					position: relative
+					+fz(1.2rem)
+					&:before
+						content: ""
+						display: block
+						width: 1px
+						height: 100%
+						+pos(abs, 0 0 0 -30%)
+						background: $whites
+			.icon-social
+				.icon-item
+					display: inline-block
+					+mar(1rem 0 0 0)
+					.icon-link
+						text-decoration: none
+						i
+							width: 3.5rem
+							height: 3.5rem
+							border-radius: 50%
+							border: 1px solid #ffffff
+							font-size: 2rem
+							color: $whites
+							display: flex
+							justify-content: center
+							align-items: center
+		+media-breakpoint-up(sm)
+			.container
+				.rgs-email
+					input
+						width: 80%
+		+media-breakpoint-up(md)
+			.container
+				text-align: left
+				.rgs-txt
+					h6
+						+fz(1.2rem)
+					.txt-lf
+						+fz(.9rem)
+				.rgs-email
+					border: none
+					text-align: center
+					input
+						border: 1px solid $whites
+						+pad(.5rem)
+						width: 100%
+					button		
+						border: 1px solid $whites
+						+pad(.3rem .5rem)
+						+mar(.5rem 0 .5rem 0)
+						&:before
+							display: none
+				.icon-social
+					text-align: right
+					.icon-item
+						+mar(0)
+						.icon-link
+							i
+								width: 3rem
+								height: 3rem
+								+fz(1.5rem)
 		+media-breakpoint-up(lg)
 			.container
-					+pad(null 100px)
+				+pad(null 100px)
+				// position: relative
+				// .txt-intro,.email-intro,.social-intro
+				// 	display: flex
+				// 	// justify-content: center
+				// 	align-items: center
+				// 	// +pos(abs, 50% 0 0 0)
+				.rgs-txt
+					h6
+						+fz(1.5rem)
+					.txt-lf
+						+fz(.7rem)
+						+mar(0)
+				.rgs-email
+					background: #FF6D00
+					border: 1px solid $whites
+					input
+						width: 72%
+						height: 35px
+						+mar(0)
+						+pad(0)
+						border: 0
+						background: #FF6D00
+						color: $whites
+						+fz(.9rem)
+						// &:click
+						// 	border: none
+						// 	display: none
+					button
+						background: #FF6D00
+						color: $whites
+						+mar(0)
+						+pad(0)
+						border: 0
+						position: relative
+						+fz(1rem)
+						&:before
+							content: ""
+							display: block
+							width: 1px
+							height: 100%
+							+pos(abs, 0 0 0 -17%)
+							background: $whites
+						&:hover
+							color: gray
+				.icon-social
+					text-align: right
+					.icon-item
+						display: inline-block
+						+mar(0)
+						.icon-link
+							text-decoration: none
+							i
+								width: 3rem
+								height: 3rem
+								border-radius: 50%
+								border: 1px solid #ffffff
+								font-size: 1.5rem
+								color: $whites
+								display: flex
+								justify-content: center
+								align-items: center
+								&:hover
+									color: gray
+	.copyright
+		min-height: 35px
+		background: #212121
+		.inf-link
+			+pad(0)
+			.item
+				display: flex
+				justify-content: center
+				+mar(0)
+				.item-nav
+					+mar(.5rem .8rem 0 0)
+					.item-link
+						+mar(0 .5rem)
+						text-decoration: none
+						color: #5A5A5A
+						+fz(1rem)	
+		.txt-copy
+			display: flex
+			justify-content: center
+			.title
+				p
+					color:  #5A5A5A
+					+mar(0)
+					+fz(1rem)
+		+media-breakpoint-up(lg)
+			.container
+				+pad(0 100px)
+				.item
+					justify-content: flex-start
+					+mar(.5rem 0)
+					.item-nav
+						+mar(0)
+						.item-link
+							+fz(.8rem)
+							+mar(0 .5rem 0 0)
+							&:hover
+								color: #FF6D00
+				.txt-copy
+					+mar(.5rem 0)
+					+pad(0)
+					align-items: center
+					.title
+						p 
+							+fz(.8rem)
+				
+
 
 
