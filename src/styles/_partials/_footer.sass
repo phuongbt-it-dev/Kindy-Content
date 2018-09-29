@@ -48,13 +48,14 @@ footer
 					+fz(1rem)
 					color: $whites
 			.rgs-email
+				display: flex
 				background: #FF6D00
 				border: 1px solid $whites
 				input
 					width: 75%
 					height: 35px
 					+mar(0)
-					+pad(0)
+					+pad(0 0 0 1rem)
 					border: 0
 					background: #FF6D00
 					color: $whites
@@ -63,7 +64,7 @@ footer
 				button
 					background: #FF6D00
 					color: $whites
-					+mar(0)
+					+mar(0 0 0 2rem)
 					+pad(0)
 					border: 0
 					position: relative
@@ -72,8 +73,10 @@ footer
 						content: ""
 						display: block
 						width: 1px
-						height: 100%
-						+pos(abs, 0 0 0 -30%)
+						height: 70%
+						position: absolute
+						top: 5px
+						left: -30%
 						background: $whites
 			.icon-social
 				.icon-item
@@ -107,6 +110,7 @@ footer
 				.rgs-email
 					border: none
 					text-align: center
+					display: block
 					input
 						border: 1px solid $whites
 						+pad(.5rem)
