@@ -58,6 +58,8 @@ footer
 					border: 0
 					background: #FF6D00
 					color: $whites
+					&::placeholder
+						color: white
 				button
 					background: #FF6D00
 					color: $whites
@@ -195,18 +197,19 @@ footer
 		background: #212121
 		.inf-link
 			+pad(0)
+			text-align: center
 			.item
-				display: flex
-				justify-content: center
+				display: inline-block
 				+mar(0)
 				.item-nav
-					+mar(.5rem .8rem 0 0)
+					+mar(.3rem 0 0 0)
 					.item-link
 						+mar(0 .5rem)
 						text-decoration: none
 						color: #5A5A5A
 						+fz(1rem)	
 		.txt-copy
+			text-align: center
 			display: flex
 			justify-content: center
 			.title
@@ -214,22 +217,33 @@ footer
 					color:  #5A5A5A
 					+mar(0)
 					+fz(1rem)
+		+media-breakpoint-up(md)
+			.inf-link
+				.item
+					display: flex
+					justify-content: center
+			.txt-copy
+				.title
+					+mar(.3rem 0 0 0)
 		+media-breakpoint-up(lg)
 			.container
 				+pad(0 100px)
-				.item
-					justify-content: flex-start
-					+mar(.5rem 0)
-					.item-nav
-						+mar(0)
-						.item-link
-							+fz(.8rem)
-							+mar(0 .5rem 0 0)
-							&:hover
-								color: #FF6D00
+				.inf-link
+					+pad(0 15px)
+					.item
+						justify-content: flex-start
+						+mar(.5rem 0)
+						.item-nav
+							+mar(0)
+							.item-link
+								+fz(.8rem)
+								+mar(0 .5rem 0 0)
+								&:hover
+									color: #FF6D00
 				.txt-copy
+					justify-content: flex-end
 					+mar(.5rem 0)
-					+pad(0)
+					+pad(0 15px 0 0)
 					align-items: center
 					.title
 						p 

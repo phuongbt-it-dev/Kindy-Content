@@ -1,14 +1,17 @@
 extends _layout/layout
 
 block variables
-	- var title = 'About'
-	- var description = 'Description for about page'
-	- var bodyclass = 'about'
+	- var title = 'News'
+	- var description = 'Description for news page'
+	- var bodyclass = 'news'
 
 block body
-	section.about
-		.container
-			.row
-				.col
-					h1.mt-4 About Page
+	//- Phần banner
+	section.news-banner
+		article.banner
+			.title
+				.container
+					.row
+						.col
+							h1.mt-4 About Page
 

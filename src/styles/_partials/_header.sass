@@ -41,7 +41,12 @@ header
 							+mar(0)
 							border-top: 1px solid #FF6B07
 							#dropdownFS
-								+pad(.5rem 0)
+								+pad(.5rem 0) 
+							.dropdown-menu
+								.dropdown-item
+									padding-left: .5rem
+									span
+										+pad(0 0 0 .5rem)
 						.search
 							+pad(0)
 							+mar(0)
@@ -70,11 +75,14 @@ header
 					.custom-search
 						display: inline-flex
 						.lang
+							position: relative
 							border: none
 							+pad(0)
-							+mar(0)
+							+mar(0 1rem 0 2rem)
 							#dropdownFS
 								margin-left: 4rem
+								&:after
+									display: none
 								.nav-link
 									&:hover
 										background: #8080802e
@@ -83,6 +91,7 @@ header
 									height: 1.3rem
 									border-radius: 50%
 							.dropdown-menu
+								+pos(abs, 50px null null 0)
 								max-width: 800px
 								max-height: 500px
 								.dropdown-item
@@ -99,6 +108,7 @@ header
 								.icon-search
 									i
 										+fz(1.5rem)
+										color: gray
 						
 
 
